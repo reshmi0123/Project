@@ -1,0 +1,87 @@
+<html>
+    <head>
+    <style>
+        body{ background: linear-gradient(196deg, rgb(242,212,74) , rgb(236,12,12) , rgb(0,0,0) );
+            }
+            </style></head>
+<form id="survey-form">
+
+    <div class="field">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="dimension" placeholder="Enter your name" required>
+    </div>
+
+    <div class="field">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd">
+    </div>
+
+
+    <div class="field">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="dimension" placeholder="Enter valid email address" required>
+    </div>
+
+    <div class="field">
+        <label id="name-label" for="name">Phone Number</label>
+        <input type="text" name="name" id="name" class="dimension">
+    </div>
+
+    <div class="field">
+        <p>Gender</p>
+        <label>
+            <input name="recommend" type="radio" value="Male" class="circle">Male</input>
+        </label>
+
+        <label>
+            <input name="recommend" type="radio" value="female" class="circle">Female</input>
+        </label>
+
+        <label>
+            <input name="recommend" type="radio" value="others" class="circle">Others</input>
+        </label>
+    </div><br>
+ <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+    </div>
+    <div class="field">
+        <p>Languages</p>
+
+        <label>
+            <input type="checkbox" value="englsih" class="box">English</input>
+        </label>
+
+        <label>
+            <input type="checkbox" value="hindi" class="box">Hindi</input>
+        </label>
+
+        <label>
+            <input type="checkbox" value="odia" class="box">Odia</input>
+        </label>
+        
+        <label>
+            <input type="checkbox" value="tamil" class="box">Tamil</input>
+        </label>
+        <label>
+            <input type="checkbox" value="odia" class="box">Bangla</input>
+        </label>
+    </div>
+
+
+    <div class="field">
+        <p>Address</p>
+        <textarea id="comments" class="area" name="comment" placeholder="Write your Address here "></textarea>
+    </div>
+<br>
+
+
+    <div class="field">
+        <button type="submit" id="submit" class="submit">
+            Submit
+        </button>
+    </div>
+</form>
+
+</html>

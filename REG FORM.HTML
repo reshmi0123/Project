@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>asignment 4</title>
+<style>
+
+.dim {
+  max-width: 850px;
+  width: 100%;
+  margin: 50px auto 0 auto;
+}
+ 
+.title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Times", sans-serif;
+  font-weight: 100px;
+}
+body {
+    background: linear-gradient(180deg,#000000,#fcfcfc);
+}
+#description {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 25px;
+}
+form {
+  display: block;
+  border-radius: 30px;
+  padding: 30px;
+  margin-top: 30px;
+  background: black;
+}
+ 
+.field {
+  padding-bottom: 10px;
+  margin: 0 auto 20px auto;
+  width: 90%;
+  color: white;
+  font-weight: 150px;
+  font-size: 20px;
+}
+ 
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+ 
+</style>
+</head>
+
+<main>
+<body>
+    <div class="dim">
+        <header class="title">
+	<center>
+            <h1 id="title"><u>KIIT ENTRANCE EXAMINATION REGISTRATION FORM</u> </h1>
+		<h2><B>KIITEE- 2021</B></h2>
+	</center>
+            <p id="description"><I><b>Fill the form given below to register for  KIITEE -2021</b></I></p>
+	</header>
+            <form id="survey-form">
+
+                <div class="field">
+                    <label id="name-label" for="name"><u>Name</u></label>
+                    <input type="text" name="name" id="name" class="dimension" placeholder="Enter your name" required>
+                </div>
+
+                <div class="field">
+                    <label id="name-label" for="name"><u>Marks scored in 10th</u></label>
+                    <input type="text" name="name" id="name" class="dimension" placeholder="Out of 10" required>
+                </div>
+
+                <div class="field">
+                    <label id="name-label" for="name"><u>Marks scored in 12th (if given) </u></label>
+                    <input type="text" name="name" id="name" class="dimension" placeholder="in terms of percentage">
+                </div>
+
+                <div class="field">
+                    <label id="email-label" for="email"><u>Email</u></label>
+                    <input type="email" name="email" id="email" class="dimension"
+                        placeholder="Enter valid email address" required>
+                </div>
+
+                <div class="field">
+                    <label id="number-label" for="age"><u>Age</u></label>
+                    <input type="number" name="age" id="number" class="dimension" min="20" max="100" placeholder="Age"
+                        required>
+                </div>
+
+                <div class="field">
+                    <p><u>Gender</u></p>
+                    <label>
+                        <input name="recommend" type="radio" value="Male" class="circle">Male</input>
+                    </label>
+
+                    <label>
+                        <input name="recommend" type="radio" value="female" class="circle">Female</input>
+                    </label>
+
+                    <label>
+                        <input name="recommend" type="radio" value="others" class="circle">Others</input>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <p><u>SELECT YOUR COURSE</u></p>
+
+                    <label>
+                        <input name="problem" type="checkbox" value="time" class="box">B.TECH(4 YEAR PROGRAM)</input>
+                    </label>
+
+                    <label>
+                        <input name="problem" type="checkbox" value="link" class="box">LATERAL ENTRY(3 YEAR PROGRAM)</input>
+                    </label>
+
+                    <label>
+                        <input name="problem" type="checkbox" value="+2" class="box">BIOTECHNOLOGY -DUAL DEGREE (B.TECH+ M.TECH)(5 YEAR PROGRAM)</input>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <p><u>Address</u></p>
+                    <textarea id="comments" class="area" name="comment"
+                        placeholder="Write your Address here "></textarea>
+                </div>
+
+                <div class="field">
+                    <p><u>Examination center</u></p>
+                    <select id="dropdown" for="genre" class="dimension" required>
+                        <option disabled selected value="select">Select center </option>
+                        <option value="Bhubaneswar">Bhubaneswar</option>
+                        <option value="Vizag">Vizag</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <button type="submit" id="submit" class="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+    </div>
+    </body>
+</main>
+
+</html>

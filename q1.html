@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="form.css">
+</head>
+<main>
+<style>
+
+.dim {
+  max-width: 850px;
+  width: 100%;
+  margin: 50px auto 0 auto;
+}
+ 
+.title {
+  color: white;
+  text-align: center;
+  font-family: "Times", sans-serif;
+  font-weight: 200px;
+}
+body {
+  background: linear-gradient(0deg, #fdbb2d, #22c1c3, #833ab4);
+}
+ 
+#description {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+}
+form {
+
+  display: block;
+  border-radius: 30px;
+  padding: 25px;
+  margin-top: 30px;
+  background: linear-gradient(132deg, #020024,#090979,#00d4ff);
+}
+ 
+.field {
+  padding-bottom: 10px;
+  margin: 0 auto 20px auto;
+  width: 85%;
+  color: white;
+  font-weight: 150px;
+  font-size: 17px;
+  display: flex;
+}
+ 
+label {
+  display: flex;
+  margin-bottom: 10px;
+}
+ 
+.dimension {
+
+  display: flex;
+  width: 95%;
+  height: 30px;
+  color: black;
+  border: 1px solid;
+  margin-left: 10px;
+}
+ 
+.area {
+  min-height: 120px;
+  width: 100%;
+  padding: 5px;
+  resize: vertical;
+}
+ 
+.submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: rgb(238, 180, 180);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+   </style>
+</head>
+<main>
+    <div class="dim">
+        <header class="title">
+            <h1 id="title">Registration Form </h1>
+            <p id="description">Fill the required fields correctly</p>
+        </header>
+
+        <body>
+        
+            <form id="survey-form">
+
+                <div class="field">
+                    <label id="name-label" for="name">University: </label>
+                    <input type="text" name="name" id="name" class="dimension"  required>
+                </div>
+
+                <div class="field">
+                    <label id="name-label" for="name">Institute</label>
+                    <input type="text" name="name" id="name" class="dimension"  required>
+                </div>
+
+
+  <div class="field">
+                    <p>Branch</p>
+                    <select id="dropdown" for="branch" class="dimension" required>
+                        <option disabled selected value="select">Select branch </option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="CSSE">CSSE</option>
+                        <option value="CSCE">CSCE</option>
+                    </select>
+                </div>
+ 
+   <div class="field">
+                    <p>Degree</p>
+                    <select id="dropdown" for="branch" class="dimension" required>
+                        <option disabled selected value="select">Select degree </option>
+                        <option value="Completed +2"> Completed +2 </option>
+                        <option value="Completed UG">Completed UG</option>
+                        <option value="Completed PG">Completed PG</option>
+                        <option value="Completed 10th">Completed 10th</option>
+                    </select>
+                    
+                  
+                                 <label>
+                        <input name="problem" type="checkbox" value="time" class="box">Completed</input>
+                    </label>
+
+                    <label>
+                        <input name="problem" type="checkbox" value="link" class="box">Pursuing</input>
+                    </label>
+
+              
+                </div>
+                
+                
+                <div class="field">
+                    <label id="number-label" for="age">Average CPI</label>
+                    <input type="number" name="age" id="number" class="dimension" min="0" max="10" 
+                        required>
+                       
+                         <label id="number-label" for="age">Upto</label>
+                    <input type="number" name="sem" id="number" class="dimension" min="1" max="8" 
+                        required>
+                        
+                        <p>Semester</p>
+                </div>
+		
+             <div class="field">
+                    <label id="number-label" for="experience">Experience </label>
+                    <input type="number" name="age" id="number" class="dimension" min="1" max="20" 
+                        required>
+                      
+                </div>
+                
+              
+
+                <div class="field">
+              <label for="homepage">Your website or blog</label>
+  <input type="url" id="homepage" name="homepage"><br><br>
+                </div>
+
+              
+
+                <div class="field">
+                    <button type="submit" id="submit" class="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+    </div>
+    </body>
+</main>
+
+</html>
