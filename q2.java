@@ -1,15 +1,29 @@
-public class q2
+import java.util.*;
+import java.lang.*;
+
+class q2 
 {
-   public static void main(String[] args) 
-   {
-       int a,s=0;
-       for(int i=0;i<10;i++)
-       {
-           a = Integer.parseInt(args[i]);
-           if(a%2==0)
-           s++;
-        }
-        System.out.println(s+"Even nos");
-        System.out.println(10-s+"ODD nos");
+    public static void main(String[] args) 
+    {
+      
+      for(int i=0;i<args.length;i++)  
+      System.out.println(args[i]);  
+
+      
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter string 1 :");
+        String str2= sc.nextLine();
+        for(int i=0;i<args.length;i++)
+        {
+          String str3= (args[i]).concat(str2);
+
+        System.out.println("Concated string : "+str3);
+
+          String[] str_split = str3.split("\\s");
+           for (int x=0; x<str_split.length; x++) 
+           {
+             System.out.println(str_split[x]);
+           }
+          }
     }
-}
+}   
